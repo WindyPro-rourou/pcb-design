@@ -50,5 +50,8 @@ AI 命中「画 PCB / 布线 / DRC / 叠层阻抗 / 打样 / 验收」等关键�
 
 ## 许可
 
-- 代码（`scripts/*.js`）与本文档：MIT（见 [LICENSE](LICENSE)）。
+- 代码（`scripts/*.js`）与本文档：**PolyForm Noncommercial License 1.0.0**（见 [LICENSE](LICENSE)）。
+  **✅ 允许个人及任何非商业用途**（个人学习/研究/实验/业余项目，以及教育、公益、科研、政府等非商业组织）；
+  **⛔ 禁止任何商业用途**（商用需另行获得授权）。
 - IPC 标准相关：见 [NOTICE.md](NOTICE.md)。
+- 商用授权：请联系作者。
