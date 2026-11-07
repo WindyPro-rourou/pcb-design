@@ -1,0 +1,11 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+*.swp
+*~
+
+# build/local
+node_modules/
+dist/
+tmp/
+*.log
