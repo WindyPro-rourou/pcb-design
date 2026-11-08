@@ -10,6 +10,7 @@ PCB 设计与打样技能，用于 AI Agent（如 DSH / Claude / Codex 等支持
 pcb-design/
 ├─ SKILL.md                     # 总纲：路由表 + 12 条铁律 + 工作流 + 速查 + 索引
 ├─ references/
+│  ├─ drawing-playbook.md               # ⭐Agent 画板作战手册：分步 SOP + 自检关卡 G0~G5
 │  ├─ electrical-clearance-current.md   # IPC-2221 间距(Table 6-1)/载流/铜厚线宽
 │  ├─ stackup-impedance.md              # 传输线阻抗/叠层/Dk-Df/去耦
 │  ├─ holes-lands-vias.md               # 焊盘环宽/孔/盲埋孔/盖油
