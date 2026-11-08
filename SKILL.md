@@ -41,6 +41,7 @@ description: >
 | 放件、连线、原理图、原理图转 PCB、DRC、导出打样包 | `references/eda-automation-api.md` + `eda-board-process.md` |
 | 布局/自动布线跑不通/自动布线难看/飞线清零/铺铜连通/DRC 上千条 | `references/eda-board-process.md` + `eda-deep-routing.md` |
 | 具体模块怎么画（LDO/USB/HDMI/MIPI/以太网/天线…）/ 阻抗/串扰/过孔/铺铜/丝印 | `references/wiki-modules-knowledge.md` |
+| 制造/DFM/打样被板厂打回/拼板/表面处理选型/钢网立碑/盘中孔背钻 | `references/manufacturing-dfm.md` |
 
 ---
 
@@ -91,6 +92,7 @@ G. 验收：eda_export 出 Gerber/BOM/坐标 → 按 IPC-6012E 性能 + IPC-A-60
 - **介质耐压**：≥80µm 间距 500V，<80µm 250V（Class2/3）。**绝缘电阻**：C2 接收500MΩ/湿热100MΩ，C3 500MΩ。
 - **载流**：线宽/铜厚由温升查 Figure 6-4（含10%降额；板厚≤0.8mm或铜≥108µm 再降15%）；速估 `I=k·ΔT^0.44·A^0.725`，k=0.024外/0.048内。
 - **嘉立创工艺**：线宽/间距 ≥5/5mil（能力3.5mil，设计取6mil）；过孔外径≥19.7mil、孔≥0.3mm；板厚1.6mm、2层；**免费档不支持过孔塞油**（焊盘内过孔要挪走/手焊）。
+- **DFM**：过 DRC ≠ 过 DFM；线宽/线距/孔/环宽/板边距按板厂能力留余量；V-cut 同层直线不转弯、盘中孔必塞孔研磨、多层给叠层表、拼板加 ≥5mm 工艺边+≥3 Mark。详见 `references/manufacturing-dfm.md`。
 
 ---
 
@@ -107,6 +109,7 @@ G. 验收：eda_export 出 Gerber/BOM/坐标 → 按 IPC-6012E 性能 + IPC-A-60
 | `references/eda-board-process.md` | 双层板实战：布局均衡/外壳开孔对齐/45°禁直角/自动布线分批/GND 环形地线/过孔间距/API 陷阱/脚本规模上限 |
 | `references/eda-deep-routing.md` | 转向罚分路由器、双引擎连通自检、铺铜过期判别、DRC 归零、清理顺序、量产检查与 19 条血泪教训 |
 | `references/wiki-modules-knowledge.md` | 常用模块(15 类)+阻抗/高速+电源地铺铜+走线间距载流+生产工艺 的知识点汇总 |
+| `references/manufacturing-dfm.md` | 板厂工艺能力速查 / DFM 十大坑 / 拼板(V-cut·邮票孔·工艺边·Mark) / 表面处理选型(ENIG黑盘等) / 钢网立碑 / 盘中孔·背钻 / 阻抗叠层 / 下单检查清单 |
 
 ## 6. scripts 索引（交给 `eda_exec` 的 JS，用 `__OPTS__` 注入参数）
 

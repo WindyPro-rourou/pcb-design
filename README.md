@@ -18,7 +18,8 @@ pcb-design/
 │  ├─ eda-automation-api.md             # 嘉立创EDA 接入/工具/官方API/踩坑
 │  ├─ eda-board-process.md              # 双层板布局→布线→GND→DRC 实战
 │  ├─ eda-deep-routing.md               # 转向罚分布线器/连通自检/DRC 归零
-│  └─ wiki-modules-knowledge.md         # 常用模块 + 阻抗/铺铜/过孔/丝印/工艺
+│  ├─ wiki-modules-knowledge.md         # 常用模块 + 阻抗/铺铜/过孔/丝印/工艺
+│  └─ manufacturing-dfm.md              # 板厂能力/DFM十大坑/拼板/表面处理选型/钢网立碑/盘中孔/检查清单
 └─ scripts/                             # 可交给 eda_exec 运行的 JS 工具（__OPTS__ 注入参数）
    ├─ smart_route.js  net_check.js  gnd_solver.js  board_audit.js
    ├─ floating_pad_audit.js  route_simplify2.js  chamfer_safe.js
