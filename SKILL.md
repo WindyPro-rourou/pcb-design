@@ -35,6 +35,7 @@ description: >
 
 | 你要做的事 | 先看 |
 |---|---|
+| **要从需求完整画一块板（总流程 + 每步自检关卡 G0~G5）** | `references/drawing-playbook.md` ⭐先读 |
 | 间距留多少 / 线宽能过多大电流 / 环宽/焊盘怎么算 / 叠层与阻抗 / 材料选型 | `references/electrical-clearance-current.md`、`stackup-impedance.md`、`holes-lands-vias.md`、`materials-finishes-dfm.md` |
 | 板子做出来合不合格、外观/切片判据、验收数值分 Class | `references/acceptance-6012-a600.md` |
 | 连不上 EDA / 用什么工具 / 官方 API 怎么写 / 报错排查 | `references/eda-automation-api.md` |
@@ -110,6 +111,7 @@ G. 验收：eda_export 出 Gerber/BOM/坐标 → 按 IPC-6012E 性能 + IPC-A-60
 | `references/eda-deep-routing.md` | 转向罚分路由器、双引擎连通自检、铺铜过期判别、DRC 归零、清理顺序、量产检查与 19 条血泪教训 |
 | `references/wiki-modules-knowledge.md` | 常用模块(15 类)+阻抗/高速+电源地铺铜+走线间距载流+生产工艺 的知识点汇总 |
 | `references/manufacturing-dfm.md` | 板厂工艺能力速查 / DFM 十大坑 / 拼板(V-cut·邮票孔·工艺边·Mark) / 表面处理选型(ENIG黑盘等) / 钢网立碑 / 盘中孔·背钻 / 阻抗叠层 / 下单检查清单 |
+| `references/drawing-playbook.md` | ⭐**Agent 画板作战手册**：需求→叠层→原理图→布局→布线→DFM→交付 的分步 SOP + 自检关卡 G0~G5 + "画坏"修正表 + 开工提示词骨架 |
 
 ## 6. scripts 索引（交给 `eda_exec` 的 JS，用 `__OPTS__` 注入参数）
 
